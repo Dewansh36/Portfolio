@@ -33,6 +33,7 @@ app.get('*', (req, res) => {
     res.send('404 Page Not Found!');
 });
 
-app.listen(3000, () => {
-    console.log("Listning on Port 3000");
+const port=process.env.PORT||3000;
+app.listen(port, () => {
+    console.log(`Listning on Port ${port}`);
 });
