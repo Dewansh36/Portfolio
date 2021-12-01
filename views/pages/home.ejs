@@ -1,0 +1,245 @@
+<% layout('layouts/boilerplate') %>
+    <link rel="stylesheet" href="/sheets/home_app.css">
+    <%- include('../partials/navbar')%>
+        <button type="button" class="btn btn-primary btn-floating btn-lg" id="back-to-top">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+        <div id="about">
+            <h1>Hi! I am Dewansh</h1>
+            <div class="typing-container">
+                <span class="text-white">I AM</span>
+                <span id="sentence"></span>
+                <span id="cursor"></span>
+            </div>
+        </div>
+        <div id="skills" class="container">
+            <h3 class="text-center"> SKILLS </h3>
+            <div class="row justify-content-center">
+                <div class=" col-md-2 col-sm-4 mb-2 col-xs-6 ">
+                    <div class="card h-100">
+                        <img src="/images/html.png" class="card-img-top p-2 mb-2 img-fluid" alt="...">
+                        80%
+                        <div class="skills-80">
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-2 col-sm-4 mb-2 col-xs-6">
+                    <div class="card h-100">
+                        <img src="/images/css.png" class="card-img-top p-2 mb-2 img-fluid" alt="...">
+                        60%
+                        <div class="skills-60">
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-2 col-sm-4 mb-2 col-xs-6">
+                    <div class="card h-100">
+                        <img src="/images/javascript.png" class="card-img-top p-2 mb-2 img-fluid" alt="...">
+                        60%
+                        <div class="skills-60">
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-2 col-sm-4 mb-2 col-xs-6">
+                    <div class="card h-100">
+                        <img src="/images/bootstrap.png" class="card-img-top p-2 mb-2 img-fluid" alt="...">
+                        80%
+                        <div class="skills-80">
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-2 col-sm-4 mb-2 col-xs-6">
+                    <div class="card h-100">
+                        <img src="/images/nodejs.png" class="card-img-top p-2 mb-2 img-fluid" alt="...">
+                        80%
+                        <div class="skills-80">
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-2 col-sm-4 mb-2 col-xs-6">
+                    <div class="card h-100">
+                        <img src="/images/expressjs.png" class="card-img-top p-2 mb-2 img-fluid" style="height: 6rem;"
+                            alt="...">
+                        80%
+                        <div class="skills-80">
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-2 col-sm-4 mb-2 col-xs-6">
+                    <div class="card h-100">
+                        <img src="/images/mongodb-leaf.png" class="card-img-top p-2 mb-2 img-fluid" alt="...">
+                        80%
+                        <div class="skills-80">
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-2 col-sm-4 mb-2 col-xs-6">
+                    <div class="card h-100">
+                        <img src="/images/github.png" class="card-img-top p-2 mb-2" alt="...">
+                        80%
+                        <div class="skills-80">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4>LANGUAGES</h4>
+            <div class="row justify-content-center">
+                <div class=" col-md-2 col-sm-4 mb-2 col-xs-6">
+                    <div class="card h-100">
+                        <img src="https://img.icons8.com/color/144/000000/c-plus-plus-logo.png" />
+                        100%
+                        <div class="skills-80">
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-2 col-sm-4 mb-2 col-xs-6">
+                    <div class="card h-100">
+                        <img src="https://img.icons8.com/color/144/000000/c-programming.png" />
+                        60%
+                        <div class="skills-80">
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-2 col-sm-4 mb-2 col-xs-6">
+                    <div class="card h-100">
+                        <img src="https://img.icons8.com/color/144/000000/java-coffee-cup-logo--v1.png" />
+                        60%
+                        <div class="skills-80">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cp" class="container">
+            <h3 class="text-center">COMPETITIVE PROGRMMING</h3>
+            <div class="row d-flex justify-content-around">
+                <div class="col-5">
+                    <a href="https://codeforces.com/profile/Dewansh05">
+                        <div class="card h-100 text-center">
+                            <img src="/images/codeforces.png" class="card-img-top" alt="...">
+                            <div class="">
+                                <h5 class="card-title"> CodeForces</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Rank: <%= cfInfo.rank %>
+                                </li>
+                                <li class="list-group-item">Current Rating: <%= cfInfo.rating %>
+                                </li>
+                                <li class="list-group-item">Max Rating: <%= cfInfo.maxRating %>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.codechef.com/users/dewansh_36">
+                        <div class="card h-100 text-center">
+                            <img src="/images/codecheg.png" class="card-img-top" alt="...">
+                            <div class="">
+                                <h5 class="card-title">CodeChef</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Rank: <%= ccInfo.stars %>
+                                </li>
+                                <li class="list-group-item">Current Rating: <%= ccInfo.rating %>
+                                </li>
+                                <li class="list-group-item">Max Rating: <%= ccInfo.highest_rating %>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="container">
+            <h3 class="text-center">PROJECTS</h3>
+            <div class="row d-flex justify-content-around my-2 ">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/images/yelpcamp.png" class="img-fluid rounded-start " alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">YelpCamp</h5>
+                                <p class="card-text"> A Camp Ground finder and reviewer site where you can see other
+                                    campground as well as Create your own.
+                                    You can also review and rate the Camp Grounds.
+                                    It also has some nice features as Cluster-Map and Camp Data Protection.</p>
+                                <div class="card-body mt-auto">
+                                    <a href="https://github.com/Dewansh36/YelpCamp"><i class="bi bi-github"></i></a>
+                                    <a href="http://yelpcampdc.herokuapp.com/"><i class="bi bi-globe2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around my-2">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/images/mspb.png" class="img-fluid rounded-start " alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Multi Step Progress Bar</h5>
+                                <p class="card-text"> It is Multi Step Form which has a Progress Bar for displaying
+                                    current Progress Status of the User.</p>
+                            </div>
+                            <div class="card-body mt-auto">
+                                <a href="https://github.com/Dewansh36/MSPB.github.io"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around my-2">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/images/mspb.png" class="img-fluid rounded-start " alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Portfolio</h5>
+                                <p class="card-text"> It is my personal site which you are currently viewing.</p>
+                            </div>
+                            <div class="card-body mt-auto">
+                                <a href="#"><i class="bi bi-github"></i></a>
+                                <a href="#"><i class="bi bi-globe2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around my-2">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/images/museumOfCandy.png" class="img-fluid rounded-start " alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Museum of Candy</h5>
+                                <p class="card-text"> It is a static site used to showcase a fictional Candy Museum.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="https://github.com/Dewansh36/Museum-of-Candy"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/scripts/home_app.js"></script>
+        <%- include('../partials/footer') %>
