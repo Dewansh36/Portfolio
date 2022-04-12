@@ -13,12 +13,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', async (req, res) => {
     const cfData=await axios.get('https://codeforces.com/api/user.info?handles=Dewansh05');
     const cfInfo=cfData.data.result[0];
-    // console.log(cfInfo);
+    console.log(cfInfo);
 
-    const ccData=await axios.get('https://competitive-coding-api.herokuapp.com/api/codechef/dewansh_36');
-    const ccInfo=ccData.data;
+    // const ccData=await axios.get('https://competitive-coding-api.herokuapp.com/api/codechef/dewansh_36');
+    // const ccInfo=ccData.data;
     // console.log(ccInfo);
-    res.render('pages/home.ejs', { cfInfo, ccInfo });
+    res.render('pages/home.ejs', { cfInfo });
 });
 
 app.get('/cp', (req, res) => {
